@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="27527" started-at="2021-09-09T07:13:07Z" finished-at="2021-09-09T07:13:35Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="27527" started-at="2021-09-09T07:13:07Z" finished-at="2021-09-09T07:13:35Z">
+      <class name="FinalProject.End2EndProject.HomePage">
+        <test-method status="PASS" signature="basepageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FinalProject.End2EndProject.HomePage@457e2f02]" name="basepageNavigation" duration-ms="18274" started-at="2021-09-09T03:13:07Z" data-provider="getData" finished-at="2021-09-09T03:13:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestricteduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234560]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non Restriced user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepageNavigation -->
+        <test-method status="PASS" signature="basepageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FinalProject.End2EndProject.HomePage@457e2f02]" name="basepageNavigation" duration-ms="9222" started-at="2021-09-09T03:13:25Z" data-provider="getData" finished-at="2021-09-09T03:13:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restricteduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234560]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restriced user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepageNavigation -->
+      </class> <!-- FinalProject.End2EndProject.HomePage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
