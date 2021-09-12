@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+	<listeners>
+		<listener class-name="FinalProject.End2EndProject.Listeners">
+		
+		</listener>
+	</listeners>
+
+	<test name="HomePage_Test">
+	    <classes>
+	      <class name="FinalProject.End2EndProject.HomePage"/>
+	    </classes>
+	</test>
+    
+    <test name="App_Test">
+	    <classes>
+	      <class name="FinalProject.End2EndProject.AppTest"/>
+	    </classes>
+    </test>
+    
+    <test name="ValidateTitle_Test">
+	    <classes>
+	      <class name="FinalProject.End2EndProject.ValidateTitle"/>
+	    </classes>
+    </test>
+    
+    <test name="Validate_URLTest">
+	    <classes>
+	      <class name="FinalProject.End2EndProject.ValidateMovingURL"/>
+	    </classes>
+    </test>
+    
+    <test name="ValidateNavigationBar_Test">
+	    <classes>
+	        <class name="FinalProject.End2EndProject.ValidateNavigationBar"/>
+	    </classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
