@@ -6,24 +6,18 @@
   </listeners>
   <test name="ValidateTitle_Test(failed)" preserve-order="true">
     <classes>
-      <class name="FinalProject.End2EndProject.HomePage">
-        <methods>
-          <include name="CloseDriver"/>
-          <include name="initializeDriver"/>
-        </methods>
-      </class> <!-- FinalProject.End2EndProject.HomePage -->
       <class name="FinalProject.End2EndProject.ValidateNavigationBar">
         <methods>
           <include name="CloseDriver"/>
           <include name="initializeDriver"/>
         </methods>
       </class> <!-- FinalProject.End2EndProject.ValidateNavigationBar -->
-      <class name="FinalProject.End2EndProject.ValidateMovingURL">
+      <class name="FinalProject.End2EndProject.HomePage">
         <methods>
-          <include name="initializeDriver"/>
           <include name="CloseDriver"/>
+          <include name="initializeDriver"/>
         </methods>
-      </class> <!-- FinalProject.End2EndProject.ValidateMovingURL -->
+      </class> <!-- FinalProject.End2EndProject.HomePage -->
       <class name="FinalProject.End2EndProject.ValidateTitle">
         <methods>
           <include name="TitleValidation"/>
@@ -31,6 +25,12 @@
           <include name="initializeDriver"/>
         </methods>
       </class> <!-- FinalProject.End2EndProject.ValidateTitle -->
+      <class name="FinalProject.End2EndProject.ValidateMovingURL">
+        <methods>
+          <include name="initializeDriver"/>
+          <include name="CloseDriver"/>
+        </methods>
+      </class> <!-- FinalProject.End2EndProject.ValidateMovingURL -->
     </classes>
   </test> <!-- ValidateTitle_Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

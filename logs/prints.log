@@ -1,7 +1,5 @@
-03:56:12.544 [main] INFO  FinalProject.End2EndProject.BaseClass - Driver is Closed of class java.lang.Object Class 
-03:56:14.131 [main] INFO  FinalProject.End2EndProject.BaseClass - Driver is initialized
-03:56:18.256 [main] INFO  FinalProject.End2EndProject.BaseClass - Driver is Closed
-03:56:19.941 [main] INFO  FinalProject.End2EndProject.BaseClass - Driver is initialized
-03:56:25.463 [main] INFO  FinalProject.End2EndProject.BaseClass - Driver is Closed
-03:56:25.923 [AsyncHttpClient-1-3] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: AsyncHttpClient-1-3
-03:56:25.923 [AsyncHttpClient-1-4] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: AsyncHttpClient-1-4
+21:59:04.577 [main] INFO  FinalProject.End2EndProject.BaseClass - Driver is Closed of class java.lang.Object Class 
+21:59:06.143 [main] INFO  FinalProject.End2EndProject.BaseClass - Driver is initialized
+21:59:10.813 [main] INFO  FinalProject.End2EndProject.BaseClass - Driver is Closed
+21:59:12.472 [main] INFO  FinalProject.End2EndProject.BaseClass - Driver is initialized
+21:59:17.976 [main] INFO  FinalProject.End2EndProject.BaseClass - Driver is Closed

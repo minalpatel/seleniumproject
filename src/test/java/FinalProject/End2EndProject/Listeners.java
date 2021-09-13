@@ -16,6 +16,9 @@ public class Listeners extends BaseClass implements ITestListener {
 	public WebDriver driver;
 	ExtentReports extent = ExtentReportNG.getReportObject();
 	ExtentTest extentTest = null;
+	
+	//It stores all test Objects so that they can run parallely together
+	ThreadLocal<ExtentTest> threadLocal_ExtentTest = new ThreadLocal<ExtentTest>();
 	public void onFinish(ITestContext arg0) {
 		// TODO Auto-generated method stub
 		extent.flush();
@@ -36,14 +39,15 @@ public class Listeners extends BaseClass implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		// Get Method Name which failed
-		extentTest.fail(result.getThrowable());
+		threadLocal_ExtentTest.get().fail(result.getThrowable());
 		String TestCaseName = result.getMethod().getMethodName();
 		
 		try {
 			// Get Current Web Driver Used
 			driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
 			// Method in base class 
-			TakeScreenshots(TestCaseName, driver );
+			String destinationPath = TakeScreenshots(TestCaseName, driver );
+			threadLocal_ExtentTest.get().addScreenCaptureFromPath(destinationPath, TestCaseName);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -61,11 +65,12 @@ public class Listeners extends BaseClass implements ITestListener {
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		extentTest = extent.createTest(result.getMethod().getMethodName());
+		threadLocal_ExtentTest.set(extentTest);
 	}
 
 	public void onTestSuccess(ITestResult arg0) {
 		// TODO Auto-generated method stub
-		extentTest.log(Status.PASS, "Test Passed");
+		threadLocal_ExtentTest.get().log(Status.PASS, "Test Passed");
 	}
 
 }

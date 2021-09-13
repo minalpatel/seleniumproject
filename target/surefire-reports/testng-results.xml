@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="36695" started-at="2021-09-12T07:55:48Z" finished-at="2021-09-12T07:56:25Z">
+  <suite name="Suite" duration-ms="33321" started-at="2021-09-13T01:58:44Z" finished-at="2021-09-13T01:59:17Z">
     <groups>
     </groups>
-    <test name="HomePage_Test" duration-ms="15371" started-at="2021-09-12T07:55:48Z" finished-at="2021-09-12T07:56:04Z">
+    <test name="HomePage_Test" duration-ms="13612" started-at="2021-09-13T01:58:44Z" finished-at="2021-09-13T01:58:58Z">
       <class name="FinalProject.End2EndProject.HomePage">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:FinalProject.End2EndProject.HomePage@79e4c792]" name="initializeDriver" is-config="true" duration-ms="3925" started-at="2021-09-12T03:55:48Z" finished-at="2021-09-12T03:55:52Z">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:FinalProject.End2EndProject.HomePage@196a42c3]" name="initializeDriver" is-config="true" duration-ms="3643" started-at="2021-09-12T21:58:44Z" finished-at="2021-09-12T21:58:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="basepageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FinalProject.End2EndProject.HomePage@79e4c792]" name="basepageNavigation" duration-ms="7471" started-at="2021-09-12T03:55:52Z" data-provider="getData" finished-at="2021-09-12T03:56:00Z">
+        <test-method status="PASS" signature="basepageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FinalProject.End2EndProject.HomePage@196a42c3]" name="basepageNavigation" duration-ms="6870" started-at="2021-09-12T21:58:48Z" data-provider="getData" finished-at="2021-09-12T21:58:55Z">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basepageNavigation -->
-        <test-method status="PASS" signature="basepageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FinalProject.End2EndProject.HomePage@79e4c792]" name="basepageNavigation" duration-ms="3815" started-at="2021-09-12T03:56:00Z" data-provider="getData" finished-at="2021-09-12T03:56:04Z">
+        <test-method status="PASS" signature="basepageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FinalProject.End2EndProject.HomePage@196a42c3]" name="basepageNavigation" duration-ms="2974" started-at="2021-09-12T21:58:55Z" data-provider="getData" finished-at="2021-09-12T21:58:58Z">
           <params>
             <param index="0">
               <value>
@@ -53,21 +53,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basepageNavigation -->
-        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:FinalProject.End2EndProject.HomePage@79e4c792]" name="CloseDriver" is-config="true" duration-ms="112" started-at="2021-09-12T03:56:04Z" finished-at="2021-09-12T03:56:04Z">
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:FinalProject.End2EndProject.HomePage@196a42c3]" name="CloseDriver" is-config="true" duration-ms="92" started-at="2021-09-12T21:58:58Z" finished-at="2021-09-12T21:58:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->
       </class> <!-- FinalProject.End2EndProject.HomePage -->
     </test> <!-- HomePage_Test -->
-    <test name="App_Test" duration-ms="0" started-at="2021-09-12T07:56:05Z" finished-at="2021-09-12T07:56:05Z">
+    <test name="App_Test" duration-ms="0" started-at="2021-09-13T01:58:58Z" finished-at="2021-09-13T01:58:58Z">
     </test> <!-- App_Test -->
-    <test name="ValidateTitle_Test" duration-ms="7483" started-at="2021-09-12T07:56:05Z" finished-at="2021-09-12T07:56:12Z">
+    <test name="ValidateTitle_Test" duration-ms="5665" started-at="2021-09-13T01:58:58Z" finished-at="2021-09-13T01:59:04Z">
       <class name="FinalProject.End2EndProject.ValidateTitle">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateTitle@7188af83]" name="initializeDriver" is-config="true" duration-ms="6592" started-at="2021-09-12T03:56:05Z" finished-at="2021-09-12T03:56:11Z">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateTitle@6be968ce]" name="initializeDriver" is-config="true" duration-ms="5223" started-at="2021-09-12T21:58:58Z" finished-at="2021-09-12T21:59:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="FAIL" signature="TitleValidation()[pri:0, instance:FinalProject.End2EndProject.ValidateTitle@7188af83]" name="TitleValidation" duration-ms="73" started-at="2021-09-12T03:56:11Z" finished-at="2021-09-12T03:56:11Z">
+        <test-method status="FAIL" signature="TitleValidation()[pri:0, instance:FinalProject.End2EndProject.ValidateTitle@6be968ce]" name="TitleValidation" duration-ms="35" started-at="2021-09-12T21:59:04Z" finished-at="2021-09-12T21:59:04Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [FEATURED COURSES11] but found [FEATURED COURSES]]]>
@@ -114,39 +114,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TitleValidation -->
-        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateTitle@7188af83]" name="CloseDriver" is-config="true" duration-ms="120" started-at="2021-09-12T03:56:12Z" finished-at="2021-09-12T03:56:12Z">
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateTitle@6be968ce]" name="CloseDriver" is-config="true" duration-ms="58" started-at="2021-09-12T21:59:04Z" finished-at="2021-09-12T21:59:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->
       </class> <!-- FinalProject.End2EndProject.ValidateTitle -->
     </test> <!-- ValidateTitle_Test -->
-    <test name="Validate_URLTest" duration-ms="5594" started-at="2021-09-12T07:56:12Z" finished-at="2021-09-12T07:56:18Z">
+    <test name="Validate_URLTest" duration-ms="6159" started-at="2021-09-13T01:59:04Z" finished-at="2021-09-13T01:59:10Z">
       <class name="FinalProject.End2EndProject.ValidateMovingURL">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateMovingURL@4a003cbe]" name="initializeDriver" is-config="true" duration-ms="5491" started-at="2021-09-12T03:56:12Z" finished-at="2021-09-12T03:56:18Z">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateMovingURL@4082ba93]" name="initializeDriver" is-config="true" duration-ms="5910" started-at="2021-09-12T21:59:04Z" finished-at="2021-09-12T21:59:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="ValidateURLContent()[pri:0, instance:FinalProject.End2EndProject.ValidateMovingURL@4a003cbe]" name="ValidateURLContent" duration-ms="37" started-at="2021-09-12T03:56:18Z" finished-at="2021-09-12T03:56:18Z">
+        <test-method status="PASS" signature="ValidateURLContent()[pri:0, instance:FinalProject.End2EndProject.ValidateMovingURL@4082ba93]" name="ValidateURLContent" duration-ms="78" started-at="2021-09-12T21:59:10Z" finished-at="2021-09-12T21:59:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateURLContent -->
-        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateMovingURL@4a003cbe]" name="CloseDriver" is-config="true" duration-ms="66" started-at="2021-09-12T03:56:18Z" finished-at="2021-09-12T03:56:18Z">
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateMovingURL@4082ba93]" name="CloseDriver" is-config="true" duration-ms="169" started-at="2021-09-12T21:59:10Z" finished-at="2021-09-12T21:59:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->
       </class> <!-- FinalProject.End2EndProject.ValidateMovingURL -->
     </test> <!-- Validate_URLTest -->
-    <test name="ValidateNavigationBar_Test" duration-ms="7140" started-at="2021-09-12T07:56:18Z" finished-at="2021-09-12T07:56:25Z">
+    <test name="ValidateNavigationBar_Test" duration-ms="7071" started-at="2021-09-13T01:59:10Z" finished-at="2021-09-13T01:59:17Z">
       <class name="FinalProject.End2EndProject.ValidateNavigationBar">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateNavigationBar@6d60fe40]" name="initializeDriver" is-config="true" duration-ms="6944" started-at="2021-09-12T03:56:18Z" finished-at="2021-09-12T03:56:25Z">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateNavigationBar@792b749c]" name="initializeDriver" is-config="true" duration-ms="6936" started-at="2021-09-12T21:59:10Z" finished-at="2021-09-12T21:59:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="NavigationBarValidation()[pri:0, instance:FinalProject.End2EndProject.ValidateNavigationBar@6d60fe40]" name="NavigationBarValidation" duration-ms="91" started-at="2021-09-12T03:56:25Z" finished-at="2021-09-12T03:56:25Z">
+        <test-method status="PASS" signature="NavigationBarValidation()[pri:0, instance:FinalProject.End2EndProject.ValidateNavigationBar@792b749c]" name="NavigationBarValidation" duration-ms="66" started-at="2021-09-12T21:59:17Z" finished-at="2021-09-12T21:59:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigationBarValidation -->
-        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateNavigationBar@6d60fe40]" name="CloseDriver" is-config="true" duration-ms="104" started-at="2021-09-12T03:56:25Z" finished-at="2021-09-12T03:56:25Z">
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateNavigationBar@792b749c]" name="CloseDriver" is-config="true" duration-ms="69" started-at="2021-09-12T21:59:17Z" finished-at="2021-09-12T21:59:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->

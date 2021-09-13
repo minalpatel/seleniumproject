@@ -61,12 +61,13 @@ public class BaseClass {
 		}		
 	}
 	
-	public void TakeScreenshots(String TestCaseName, WebDriver driver	) throws IOException{
+	public String TakeScreenshots(String TestCaseName, WebDriver driver	) throws IOException{
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
 		File source = screenshot.getScreenshotAs(OutputType.FILE);
 		String destinationPath = System.getProperty("user.dir")+"\\reports\\" + TestCaseName+".png";
 		// Dependency Apache Common IO from maven in POM.xml
 		FileUtils.copyFile(source, new File(destinationPath));
+		return destinationPath;
 		
 	}
 
