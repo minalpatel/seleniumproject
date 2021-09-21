@@ -6,7 +6,7 @@
       <class name="FinalProject.End2EndProject.HomePage">
         <methods>
           <include name="CloseDriver"/>
-          <include name="basepageNavigation" invocation-numbers="1"/>
+          <include name="basepageNavigation" invocation-numbers="0 1"/>
           <include name="initializeDriver"/>
         </methods>
       </class> <!-- FinalProject.End2EndProject.HomePage -->

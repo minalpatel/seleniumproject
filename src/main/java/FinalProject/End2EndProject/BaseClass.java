@@ -23,6 +23,10 @@ public class BaseClass {
 		prop = new Properties();
 		FileInputStream fileInputStream = new FileInputStream("C:\\Users\\minal\\workspace\\End2EndProject\\src\\main\\java\\FinalProject\\End2EndProject\\data.properties");
 		prop.load(fileInputStream);
+		
+		//using maven to send browser value
+		String getBrowserName = System.getProperty("browser");
+		
 		String browserName = prop.getProperty("browser");
 		
 		//for Chrome browser web driver

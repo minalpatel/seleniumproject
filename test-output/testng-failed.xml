@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)" preserve-order="true">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="FinalProject.End2EndProject.ValidateMovingURL">
-        <methods>
-          <include name="initializeDriver"/>
-          <include name="ValidateURLContent"/>
-          <include name="CloseDriver"/>
-        </methods>
-      </class> <!-- FinalProject.End2EndProject.ValidateMovingURL -->
       <class name="FinalProject.End2EndProject.HomePage">
         <methods>
           <include name="CloseDriver"/>
@@ -17,18 +10,6 @@
           <include name="initializeDriver"/>
         </methods>
       </class> <!-- FinalProject.End2EndProject.HomePage -->
-      <class name="FinalProject.End2EndProject.ValidateTitle">
-        <methods>
-          <include name="CloseDriver"/>
-          <include name="initializeDriver"/>
-        </methods>
-      </class> <!-- FinalProject.End2EndProject.ValidateTitle -->
-      <class name="FinalProject.End2EndProject.ValidateNavigationBar">
-        <methods>
-          <include name="CloseDriver"/>
-          <include name="initializeDriver"/>
-        </methods>
-      </class> <!-- FinalProject.End2EndProject.ValidateNavigationBar -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

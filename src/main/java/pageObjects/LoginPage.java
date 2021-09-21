@@ -8,9 +8,10 @@ public class LoginPage {
 	
 	public WebDriver driver;
 	
-	By email_id = By.name("email");
-	By login_password = By.name(" password");
-	By login_click = By.name("commit");
+	private By email_id = By.name("email");
+	private By login_password = By.name(" password");
+	private By login_click = By.name("commit");
+	private By forgot_password = By.cssSelector("a[href*='password/new']");
 	
 	public LoginPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
@@ -27,6 +28,11 @@ public class LoginPage {
 	
 	public WebElement getLoginClick(){
 		return driver.findElement(login_click);
+	}
+	
+	public ForgotPassword forgotPassword(){
+		driver.findElement(forgot_password).click();
+		return new ForgotPassword(driver);		
 	}
 	
 	

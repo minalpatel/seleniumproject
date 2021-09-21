@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import pageObjects.ForgotPassword;
 import pageObjects.LandingPages;
 import pageObjects.LoginPage;
 
@@ -29,13 +30,17 @@ public class HomePage extends BaseClass{
 		LandingPages landingPages = new LandingPages(driver);
 		Actions A = new Actions(driver);
 	//	landingPages.getLogin().click();	
-		A.moveToElement(landingPages.getLogin()).click().build().perform();
-		LoginPage loginPage = new LoginPage(driver);
+		//A.moveToElement(landingPages.getLogin()).build().perform();
+		LoginPage loginPage = landingPages.getLogin();
+		//LoginPage loginPage = new LoginPage(driver);
 		loginPage.getEmailID().sendKeys(username);
 		loginPage.getPassword().sendKeys(password);
 		//System.out.println(text);
 		log.info(text);
 		loginPage.getLoginClick().click();
+		ForgotPassword fp = loginPage.forgotPassword();
+		fp.getEmailID().sendKeys("hello@gmail.com");
+		fp.sendInstructions().click();
 	}
 	
 	@DataProvider
