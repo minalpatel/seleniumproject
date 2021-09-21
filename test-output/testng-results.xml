@@ -1,63 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14047" started-at="2021-09-13T04:57:55Z" finished-at="2021-09-13T04:58:09Z">
+  <suite name="Default suite" duration-ms="13390" started-at="2021-09-21T19:11:44Z" finished-at="2021-09-21T19:11:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14047" started-at="2021-09-13T04:57:55Z" finished-at="2021-09-13T04:58:09Z">
-      <class name="FinalProject.End2EndProject.HomePage">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:FinalProject.End2EndProject.HomePage@179ece50]" name="initializeDriver" is-config="true" duration-ms="3599" started-at="2021-09-13T00:57:55Z" finished-at="2021-09-13T00:57:58Z">
+    <test name="Default test" duration-ms="13390" started-at="2021-09-21T19:11:44Z" finished-at="2021-09-21T19:11:58Z">
+      <class name="FinalProject.End2EndProject.ValidateTitle">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateTitle@233795b6]" name="initializeDriver" is-config="true" duration-ms="13057" started-at="2021-09-21T15:11:44Z" finished-at="2021-09-21T15:11:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="basepageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FinalProject.End2EndProject.HomePage@179ece50]" name="basepageNavigation" duration-ms="7521" started-at="2021-09-13T00:57:58Z" data-provider="getData" finished-at="2021-09-13T00:58:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nonrestricteduser@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234560]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Non Restricted user]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="TitleValidation()[pri:0, instance:FinalProject.End2EndProject.ValidateTitle@233795b6]" name="TitleValidation" duration-ms="115" started-at="2021-09-21T15:11:57Z" finished-at="2021-09-21T15:11:58Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [FEATURED COURSES11] but found [FEATURED COURSES]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [FEATURED COURSES11] but found [FEATURED COURSES]
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:171)
+	at org.testng.Assert.assertEquals(Assert.java:181)
+	at FinalProject.End2EndProject.ValidateTitle.TitleValidation(ValidateTitle.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basepageNavigation -->
-        <test-method status="PASS" signature="basepageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FinalProject.End2EndProject.HomePage@179ece50]" name="basepageNavigation" duration-ms="2821" started-at="2021-09-13T00:58:06Z" data-provider="getData" finished-at="2021-09-13T00:58:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[restricteduser@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234560]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Restricted user]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basepageNavigation -->
-        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:FinalProject.End2EndProject.HomePage@179ece50]" name="CloseDriver" is-config="true" duration-ms="86" started-at="2021-09-13T00:58:09Z" finished-at="2021-09-13T00:58:09Z">
+        </test-method> <!-- TitleValidation -->
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:FinalProject.End2EndProject.ValidateTitle@233795b6]" name="CloseDriver" is-config="true" duration-ms="179" started-at="2021-09-21T15:11:58Z" finished-at="2021-09-21T15:11:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->
-      </class> <!-- FinalProject.End2EndProject.HomePage -->
+      </class> <!-- FinalProject.End2EndProject.ValidateTitle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

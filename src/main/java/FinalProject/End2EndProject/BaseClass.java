@@ -11,6 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -21,7 +22,7 @@ public class BaseClass {
 	public static Logger log =  LogManager.getLogger(BaseClass.class.getName());
 	public WebDriver mainDriver() throws IOException{
 		prop = new Properties();
-		FileInputStream fileInputStream = new FileInputStream("C:\\Users\\minal\\workspace\\End2EndProject\\src\\main\\java\\FinalProject\\End2EndProject\\data.properties");
+		FileInputStream fileInputStream = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\FinalProject\\End2EndProject\\data.properties");
 		prop.load(fileInputStream);
 		
 		//using maven to send browser value
@@ -29,12 +30,19 @@ public class BaseClass {
 		
 		String browserName = prop.getProperty("browser");
 		
-		//for Chrome browser web driver
-		if(browserName.equalsIgnoreCase("chrome")){
+		// For chrome browser
+		if(browserName.contains("chrome") || browserName.equalsIgnoreCase("chrome")){
 			System.setProperty("webdriver.chrome.driver","C:\\Users\\minal\\Downloads\\chromedriver_win32\\chromedriver.exe");
-			this.driver = new ChromeDriver();
+		//	System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
+			ChromeOptions chromeOptions = new ChromeOptions();
+			//for headless chrome browser
+			if(browserName.contains("headless")){
+				chromeOptions.addArguments("headless");
+			}
+			
+			this.driver = new ChromeDriver(chromeOptions);
 			System.out.println("Chrome Browser");
-		}
+		}		
 		
 		//for Firefox browser web driver
 		else if(browserName.equalsIgnoreCase("firefox")){
